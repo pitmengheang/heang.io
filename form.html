@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Form Control HTML</title>
+    <link rel="stylesheet" href="../css/form2.css">
+</head>
+<body>
+    <form>
+        <h1>Application form</h1>
+        <fieldset><br>
+            <!-- create control username-->
+            <label>Enter Username</label><br>
+            <input type="text" placeholder="please input your name" required><br><br>
+            <!-- create control password-->
+            <label>Enter Email</label><br>
+            <input type="email" placeholder="please input your email" required><br><br>
+
+            <label>Gender</label>
+            <label>
+            <input type="radio" name="gender" value="male" checked> Male
+            </label>
+            <label>
+            <input type="radio" name="gender" value="female" > Female
+            </label><br><br>
+
+            <label for="nationality" >Nationality</label>
+            <select name="nationality" >
+            <option value="Cambodia" selected>Cambodia</option>
+            <option value="Cambodia" selected>USA</option>
+            <option value="Cambodia" selected>Laor</option>
+            <option value="" selected>select your nationality</option>
+            </select><br><br>
+
+            <label>Skills</label><br>
+            <input type="checkbox" name="skills" value="CCNA1" > CCNA1
+            <input type="checkbox" name="skills" value="CCNA2" > CCNA2<br>
+            <input type="checkbox" name="skills" value="CCNA3" > CCNA3
+            <input type="checkbox" name="skills" value="Cyber security" >Cyber security<br><br>
+        
+            <label>Post applying for</label><br>
+            <input type="radio" name="position" value="trainee"> Trainee
+            <input type="radio" name="position" value="software_engineer" checked> Network Engineer<br>
+            <input type="radio" name="position" value="team_leader"> Team Leader
+            <input type="radio" name="position" value="project_manager"> Project manager<br><br>
+        
+            <label for="resume">Upload Resume:</label>
+            <input type="file" name="resume" value=" "><br><br>
+        
+            <label for="paste_resume">Paste your resume</label><br>
+            <textarea name="paste_resume" rows="4" cols="30" placeholder="Sample resume text..."></textarea><br><br>
+        
+            <input type="checkbox" name="notify" checked> Notify me the status via Email<br><br>
+            <input type="checkbox" name="agree" checked> I agree to terms & conditions<br><br>
+        
+            <!--<input type="submit" value="Submit">
+            <input type="reset" value="Reset"><br>-->
+                <input type="submit" value="Submit Application">
+                <input type="reset" value="Reset">
+            
+        </fieldset>
+</body>
+</html>
